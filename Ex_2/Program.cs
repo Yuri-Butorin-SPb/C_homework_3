@@ -24,9 +24,9 @@ double by = double.Parse(Console.ReadLine());
 Console.Write("Z: ");
 double bz = double.Parse(Console.ReadLine());
 
-double Distance(double coordinate1, double coordinate2, double coordinate3, double coordinate4, double coordinate5, double coordinate6)
+double Distance(double coord1, double coord2, double coord3, double coord4, double coord5, double coord6)
 {
-    double result = ((bx-ax)*(bx-ax)+(by-ay)*(by-ay)+(bz-az)*(bz-az));
+    double result = ((coord2-coord1)*(coord2-coord1)+(coord4-coord3)*(coord4-coord3)+(coord6-coord5)*(coord6-coord5));
     result =  Math .Sqrt (result);
     return (result);
 }
