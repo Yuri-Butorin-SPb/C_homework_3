@@ -13,12 +13,19 @@
 Console.WriteLine("Введите пятизначное число: ");
 
 int pali = int.Parse(Console.ReadLine());
+int result = FindPalindrom(pali);
 
-int begin = pali / 1000;
-int end = (pali % 10 * 10) + (pali / 10 % 10);
+if (result == 1) Console.WriteLine("Да!");
+if (result == 2) Console.WriteLine("Нет!");
 
-if (begin == end) 
+int FindPalindrom(int n)
 {
-Console.WriteLine("Да!");
+    int begin = n / 1000;
+    int end = (n % 10 * 10) + (n / 10 % 10); 
+
+    if (begin == end)
+    {
+        return(1);
+    }
+    else return(2); 
 }
-else Console.WriteLine("Нет!");
