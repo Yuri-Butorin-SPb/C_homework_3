@@ -26,10 +26,11 @@ double bz = double.Parse(Console.ReadLine());
 
 double Distance(double coord1, double coord2, double coord3, double coord4, double coord5, double coord6)
 {
-    double result = ((coord2-coord1)*(coord2-coord1)+(coord4-coord3)*(coord4-coord3)+(coord6-coord5)*(coord6-coord5));
-    result =  Math .Sqrt (result);
+    double result = ((coord4-coord1)*(coord4-coord1)+(coord5-coord2)*(coord5-coord2)+(coord6-coord3)*(coord6-coord3));
+    result = Math.Sqrt (result);
     return (result);
 }
 
 double distance = Distance(ax, ay, az, bx, by, bz);
+
 Console.WriteLine(distance);
